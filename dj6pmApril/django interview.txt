@@ -1,0 +1,17 @@
+1)What is the role of Python developer?
+ans)A Python Web Developer is responsible for writing 
+server-side web application logic. 
+Python web developers usually develop back-end components,
+connect the application with the other (often third-party) web services, and support the front-end developers by integrating 
+their work with the Python application.
+2)which modules are using in crm project?
+ans)
+
+
+
+3)which authenticate you are using in your project?
+ans)Oauth2,and jwt
+
+4)what is the customized templates in django?
+Ans)
+

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>dashboard</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    #h11{
+        font-size: 50px;
+        color: deeppink;
+    }
+    th,td{
+        padding: 10px,20px;
+        text-align: center;
+        color: red;
+    }
+
+</style>
+<body>
+<center><h1 id="h11">DashBoard</h1></center>
+
+
+<div class="container">
+    <div class="row1">
+        <div class="col-md-4">
+            {% if ddata %}
+                <h2>Users</h2>
+    <table border="2px">
+    <thead>
+    <tr>
+        <th><h1>Id</h1></th>
+        <th><h1>username</h1></th>
+    </tr>
+    </thead>
+    {% for i in ddata %}
+        <tbody>
+        <tr>
+            <td><h5>{{ i.id }}</h5></td>
+            <td><h5>{{ i.username }}</h5></td>
+            <a href="/edit/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/delete/{{ employee.id }}">Delete</a>
+        </tr>
+        </tbody>
+    {% endfor %}
+    </table>
+{% else %}
+    <h1>No data ia available</h1>
+{% endif %}<br><br>
+        <center>
+        <input type="submit" value="Delete" class="btn btn-danger">
+        <input type="submit" value="Edit" class="btn btn-primary">
+            </center>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

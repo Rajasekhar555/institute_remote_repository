@@ -1,0 +1,7 @@
+python interview questions
+
+1.how to print the values in dictionary?
+2.what is the diff b/w list and tuple?
+3.which is gives more performance and memory mangement?
+4.how to print the sub folders and files from your drivers in python?
+5.how to frint list in sublists no of times?

@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Image</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ iform.as_p }}
+    <button type="submit">uplode</button>
+
+</form>
+</body>
+</html>

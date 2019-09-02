@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>student Data</title>
+
+</head>
+<body>
+<div class="container" align="center">
+    {% if sent %}
+        <h1>Thanks providing studnent information</h1>
+        <h2>Enter Next student marks</h2>
+    {% else %}
+        <h1>Student Submit Form</h1>
+    {% endif %}
+
+
+    <form method="post">
+        {% csrf_token %}
+        {{ sform.as_p }}
+        <input type="submit" value="submit" class="btn btn-primary" name="">
+        <input type="reset" value="clear" class="btn btn-danger" name="">
+
+
+    </form>
+</div>
+
+</body>
+</html>
